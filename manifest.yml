@@ -1,0 +1,11 @@
+  applications:
+  - name: bn-100-onlinecourse
+    routes:
+      - route: bn-100-onlinecourse-reliable-giraffe-ti.mybluemix.net/
+    memory: 128M
+    buildpack: python_buildpack
+  - name: bn-100-onlinecourse-nginx
+    routes:
+      - route: bn-100-onlinecourse-reliable-giraffe-ti.mybluemix.net/static
+    memory: 128M
+    buildpack: staticfile_buildpack
